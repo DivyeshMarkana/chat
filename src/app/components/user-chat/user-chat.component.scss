@@ -22,6 +22,36 @@
             padding-block : 1.3rem;
             padding-inline: 1rem;
             border-bottom : 1px solid rgba(221, 221, 221, 0.121);
+            display       : flex;
+            align-items   : center;
+
+            .user-avatar {
+                width        : 35px;
+                height       : 35px;
+                border-radius: 50%;
+
+                img {
+                    width        : 100%;
+                    height       : auto;
+                    border-radius: 50%;
+                }
+            }
+
+            .middle-content {
+                color      : #fff;
+                margin-left: .7rem;
+
+                .username {
+                    font-size: .8rem;
+                }
+
+                .user-message {
+                    font-size   : small;
+                    // color    : rgb(52, 53, 64);
+                    // color : rgb(66, 66, 77);
+                    color       : rgb(75, 75, 83);
+                }
+            }
         }
     }
 }
