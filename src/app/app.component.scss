@@ -1,0 +1,180 @@
+.poitner {
+    cursor: pointer;
+}
+
+// .top-header {
+//     background        : #171821;
+//     // position  : absolute;
+//     // top       : 0;
+//     // left      : 70px;
+//     height            : 70px;
+//     // width          : 100%;
+//     // width          : 100%;
+//     display           : flex;
+//     justify-content   : space-between;
+//     align-items       : center;
+//     width             : calc(100vw - 80px);
+//     float             : right;
+//     padding-left      : 2.5rem;
+
+//     .searchbar {
+//         display: flex;
+
+//         img {
+//             width  : 25px;
+//             height : 25px;
+//             opacity: .8;
+//         }
+
+//         .search-input {
+//             background-color: transparent;
+//             width           : 250px;
+//             margin-left     : 1rem;
+//             height          : 100%;
+//             margin-top      : .3rem;
+//             color           : rgba(255, 255, 255, 0.813);
+
+//             &:focus,
+//             &:active {
+//                 outline: none;
+//             }
+//         }
+//     }
+// }
+
+.main-container {
+    display: flex;
+    height : 100%;
+    width  : 100%;
+}
+
+.nav {
+    width                : 70px;
+    height               : 100%;
+    background           : #171821;
+    display              : flex;
+    flex-direction       : column;
+    justify-content      : center;
+    // align-items    : center;
+    box-sizing           : border-box;
+    position             : relative;
+    // border-right      : 2px solid #8f67fd35;
+    border-right         : 2px solid rgba(221, 221, 221, 0.121);
+
+    .brand-logo {
+        position     : absolute;
+        top          : 10px;
+        left         : 50%;
+        transform    : translateX(-50%);
+        padding      : 6px;
+        border       : 2px solid #8080806d;
+        border-radius: 50%;
+    }
+
+    .nav-list {
+        display        : flex;
+        flex-direction : column;
+        justify-content: space-between;
+        align-items    : center;
+        width          : 100%;
+        height         : 30%;
+
+        .nav-item {
+            // ? If navigation manu has 6 item than margin will be .5rem 0 otherwise .7rem 0
+            margin                   : .7rem 0;
+            // background         : linear-gradient(90deg rebeccapurple 0%, #171821 35%, rgb(255, 255, 255) 100%);
+            background               : linear-gradient(90deg, #8f67fd1d 5%, #171821 80%);
+            // border       : 2px solid gray;
+            // border-radius   : 50%;
+            padding                  : 1.2rem;
+            width                    : 100%;
+            border-left              : 3px solid #8f67fd;
+            // ? Or for blue color 
+            // border-left           : 3px solid #0067fb;
+
+            .nav-navigation {
+                width : 20%;
+                height: auto;
+
+
+                .nav-icon {
+                    width : 20px;
+                    margin: 0 .2rem;
+                }
+            }
+        }
+
+        .active-item {
+            // background : linear-gradient(90deg, #8f67fd1d 5%, #171821 80%);
+            // border-left: 3px solid #8f67fd;
+        }
+    }
+}
+
+// .router {
+//     // width       : calc(100% - 70px);
+//     background  : #171821;
+//     padding-left: .3rem;
+
+//     margin-top: 70px;
+//     height    : 100%;
+// }
+
+.left-side {
+    display       : flex;
+    flex-direction: column;
+
+    .top-header {
+        background        : #171821;
+        // position  : absolute;
+        // top       : 0;
+        // left      : 70px;
+        height            : 70px !important;
+        // width          : 100%;
+        // width          : 100%;
+        display           : flex;
+        justify-content   : space-between;
+        align-items       : center;
+        width             : calc(100vw - 80px);
+        float             : right;
+        padding-left      : 2.5rem;
+        border-bottom     : 1px solid rgba(221, 221, 221, 0.078);
+
+        .searchbar {
+            display: flex;
+
+            img {
+                width  : 25px;
+                height : 25px;
+                opacity: .8;
+            }
+
+            .search-input {
+                background-color: transparent;
+                width           : 250px;
+                margin-left     : 1rem;
+                height          : 100%;
+                margin-top      : .1rem;
+                color           : rgba(255, 255, 255, 0.813);
+
+                &:focus,
+                &:active {
+                    outline: none;
+                }
+            }
+        }
+    }
+
+    .router {
+        // width       : calc(100% - 70px);
+        background     : #171821;
+        // padding-left: .3rem;
+
+        // margin-top: 70px;
+        height               : 100%;
+        overflow-y           : scroll;
+        scroll-behavior      : smooth;
+        // scrollbar-width: 0 !important;
+        // scrollbar-width   : none !important;
+    }
+}
