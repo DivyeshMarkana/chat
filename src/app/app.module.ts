@@ -8,6 +8,11 @@ import { UserChatComponent } from './components/user-chat/user-chat.component';
 import { GroupChatComponent } from './components/group-chat/group-chat.component';
 import { ChatComponent } from './components/chat/chat.component';
 
+import { SwiperModule } from "swiper/angular";
+
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatIconModule } from '@angular/material/icon';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +23,12 @@ import { ChatComponent } from './components/chat/chat.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+
+    SwiperModule,
+
+    MatGridListModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

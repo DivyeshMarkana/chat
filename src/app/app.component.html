@@ -34,29 +34,33 @@
         <ul class="nav-list">
           <li class="nav-item" routerLink="/chat" routerLinkActive="active-item">
             <a class="nav-navigation poitner" routerLink="/chat" routerLinkActive="active-item">
-              <img class="nav-icon  " src="../assets/img/message.png" alt="">
+              <!-- <img class="nav-icon  " src="../assets/img/message.png" alt=""> -->
+              <img class="nav-icon  " src="../assets/img/white-icons/message.png" alt="">
             </a>
           </li>
           <li class="nav-item" routerLink="/group" routerLinkActive="active-item">
             <a class="nav-navigation poitner">
-              <img class="nav-icon  " src="../assets/img/users.png" alt="">
+              <!-- <img class="nav-icon  " src="../assets/img/users.png" alt=""> -->
+              <img class="nav-icon  " src="../assets/img/white-icons/group.png" alt="">
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-navigation poitner">
-              <img class="nav-icon  " src="../assets/img/missed-call.png" alt="">
+              <!-- <img class="nav-icon  " src="../assets/img/missed-call.png" alt=""> -->
+              <img class="nav-icon  " src="../assets/img/white-icons/call.png" alt="">
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-navigation poitner">
-              <img class="nav-icon  " src="../assets/img/settings.png" alt="">
+              <!-- <img class="nav-icon  " src="../assets/img/settings.png" alt=""> -->
+              <img class="nav-icon  " src="../assets/img/white-icons/setting.png" alt="">
             </a>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <a class="nav-navigation poitner">
               <img class="nav-icon  " src="../assets/img/user.png" alt="">
             </a>
-          </li>
+          </li> -->
         </ul>
       </nav>
     </div>
@@ -90,7 +94,45 @@
 
     <div class="router">
       <router-outlet></router-outlet>
+
+      <div class="user-chat-box">
+
+        <div class="chat-header">
+          <div class="chat-header-right">
+            <div class="chat-header-avatar">
+              <!-- <img src="../assets/img/avatar/male-13.jpg" alt=""> -->
+            </div>
+            <div class="chat-header-name">
+              <div class="chat-user-name">
+
+              </div>
+              <div class="chat-user-status">
+
+              </div>
+            </div>
+          </div>
+
+          <div class="chat-header-left">
+            <!-- def -->
+          </div>
+          <div class="chat-header-left">
+
+          </div>
+        </div>
+
+      </div>
     </div>
+
+    <!-- <mat-grid-list cols="4" rowHeight="100px">
+      <mat-grid-tile colspan="3">
+        <router-outlet></router-outlet>
+      </mat-grid-tile>
+
+      <mat-grid-tile colspan="1">
+        ddddd
+      </mat-grid-tile>
+    </mat-grid-list> -->
+
   </div>
 
 </div>

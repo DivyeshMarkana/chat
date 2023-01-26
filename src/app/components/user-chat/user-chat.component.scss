@@ -1,16 +1,37 @@
+// .main-container {
+//     display: flex;
+// }
+
 .chat-container {
-    width                 : 350px;
+    width                       : 380px;
     // border          : 2px solid #000;
     // padding: 0 1rem;
     // height    : calc(100% - 70px);
-    height                : 100%;
-    background-color      : #1c1d268d !important;
-    overflow-y            : scroll;
-    // box-shadow         : 0 0 15px 1px rgba(255, 255, 255, 0.09);
-    border-right          : 2px solid rgba(221, 221, 221, 0.121);
+    height                      : 100%;
+    // background-color      : #1c1d268d !important;
+    overflow-y                  : scroll;
+    // box-shadow               : 0 0 15px 1px rgba(255, 255, 255, 0.09);
+    border-right                : 1px solid #dddddd1f;
+    box-sizing                  : border-box;
+
+    .story-container {
+        width           : 100%;
+        background-color: #181821;
+        height          : 90px;
+        border-bottom   : 1px solid #dddddd1f;
+        margin-bottom   : .4rem;
+        display         : block;
+        margin          : auto;
+        box-sizing      : border-box;
+        position        : sticky;
+        top             : 0;
+        z-index         : 1;
+        overflow        : hidden;
+    }
 
     .chat-list {
         list-style   : none;
+        box-sizing   : border-box;
         // box-shadow: 2px 2px 3px 6px #fff;
 
         // .chat-item:first-child {
@@ -24,6 +45,7 @@
             border-bottom : 1px solid rgba(221, 221, 221, 0.121);
             display       : flex;
             align-items   : center;
+            position      : relative;
 
             .user-avatar {
                 width        : 35px;
@@ -49,9 +71,116 @@
                     font-size   : small;
                     // color    : rgb(52, 53, 64);
                     // color : rgb(66, 66, 77);
-                    color       : rgb(75, 75, 83);
+                    color       : #4b4b53;
+                }
+            }
+
+            .chat-notify {
+                // position       : absolute;
+                // // transform: translateX(10px);
+                // right          : 30px;
+                // // top         : 40%;
+
+                // display        : flex;
+                // flex-direction : column;
+                // justify-content: center;
+                // align-items    :c ;
+
+                .msg-date {
+                    color       : #4b4b53;
+                    font-size   : 10px;
+                    font-weight : 500;
+                    position    : absolute;
+                    // transform: translateX(10px);
+                    right       : 30px;
+                    top         : 25%;
+                }
+
+                img {
+                    width       : 15px;
+                    height      : 15px;
+                    position    : absolute;
+                    // transform: translateX(10px);
+                    right       : 30px;
+                    top         : 55%;
+
+                }
+
+                .unread-badge {
+                    width          : 20px;
+                    height         : 20px;
+                    border-radius  : 50%;
+                    background     : #8f67fd;
+                    position       : absolute;
+                    // transform: translateX(10px);
+                    right          : 30px;
+                    top            : 50%;
+                    display        : flex;
+                    justify-content: center;
+                    align-items    : center;
+                    font-size      : 10px;
+                    color          : #fff;
+                    font-weight    : 500;
                 }
             }
         }
     }
+}
+
+
+
+@import "~swiper/css";
+@import "~swiper/css/free-mode";
+@import "~swiper/css/pagination";
+
+.swiper {
+    width : max-content !important;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align   : center;
+    font-size    : 10px;
+    width        : 50px !important;
+    height       : 50px !important;
+    margin-right : 15px !important;
+    margin-left  : 5px !important;
+    border-radius: 50%;
+    border       : 2px solid rgb(149, 30, 234);
+    padding      : 1.5px;
+
+
+    &:first-child {
+        border       : 1px solid #dddddd1f;
+        border-radius: 50%;
+    }
+
+    // background   : #fff;
+
+    /* Center slide text vertically */
+    display                : -webkit-box;
+    display                : -ms-flexbox;
+    display                : -webkit-flex;
+    display                : flex;
+    -webkit-box-pack       : center;
+    -ms-flex-pack          : center;
+    -webkit-justify-content: center;
+    justify-content        : center;
+    -webkit-box-align      : center;
+    -ms-flex-align         : center;
+    -webkit-align-items    : center;
+    align-items            : center;
+}
+
+.swiper-wrapper {
+    display    : flex;
+    align-items: center !important;
+}
+
+.swiper-slide img {
+    display      : block;
+    width        : 100%;
+    border-radius: 50% !important;
+    height       : 100%;
+    object-fit   : cover;
 }

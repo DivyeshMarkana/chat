@@ -49,7 +49,7 @@
 }
 
 .nav {
-    width                : 70px;
+    width                : 80px;
     height               : 100%;
     background           : #171821;
     display              : flex;
@@ -63,7 +63,7 @@
 
     .brand-logo {
         position     : absolute;
-        top          : 10px;
+        top          : 15px;
         left         : 50%;
         transform    : translateX(-50%);
         padding      : 6px;
@@ -80,8 +80,9 @@
         height         : 30%;
 
         .nav-item {
-            // ? If navigation manu has 6 item than margin will be .5rem 0 otherwise .7rem 0
-            margin                   : .7rem 0;
+            // ? If navigation manu has 6 item than margin will be .5rem 0 otherwise .7rem 0;
+            // ? Navigation list has 4 items so margin will be 1rem 0;
+            margin                   : 1rem 0;
             // background         : linear-gradient(90deg rebeccapurple 0%, #171821 35%, rgb(255, 255, 255) 100%);
             background               : linear-gradient(90deg, #8f67fd1d 5%, #171821 80%);
             // border       : 2px solid gray;
@@ -171,10 +172,48 @@
         // padding-left: .3rem;
 
         // margin-top: 70px;
+        width                : 100%;
         height               : 100%;
-        overflow-y           : scroll;
+        overflow-y           : hidden;
+        display              : flex;
         scroll-behavior      : smooth;
         // scrollbar-width: 0 !important;
         // scrollbar-width   : none !important;
+
+
+        .user-chat-box {
+            width: 100%;
+
+            .chat-header {
+                width           : 100%;
+                height          : 90px;
+                background-color: transparent;
+                box-sizing      : border-box;
+                border-bottom   : 1px solid #dddddd1f;
+                display         : flex;
+                align-items     : center;
+                justify-content : space-between;
+                // margin: 0;
+
+                .chat-header-right {
+                    // width: 50%;
+
+                    .chat-header-avatar {
+                        width : 50px;
+                        height: 50px;
+
+                        img {
+                            border-radius: 50%;
+                        }
+                    }
+                }
+
+                .chat-header-left {
+                    // width     : 100%;
+                    // justify-self: flex-end;
+                    // text-align: end;
+                }
+            }
+        }
     }
 }

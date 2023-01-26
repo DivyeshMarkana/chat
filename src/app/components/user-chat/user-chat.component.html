@@ -1,6 +1,33 @@
 <!-- <p>user-chat works!</p> -->
 
+<!-- <div class="main-container"> -->
 <div class="chat-container">
+
+    <div class="story-container">
+
+        <swiper [slidesPerView]="4" [spaceBetween]="30" [freeMode]="true" [pagination]="{
+      clickable: true
+    }" class="mySwiper">
+            <ng-template swiperSlide>
+                <mat-icon style="color: #ffffff9a;">add</mat-icon>
+
+            </ng-template>
+            <ng-template swiperSlide><img src="../../../assets/img/avatar/female-06.jpg" alt=""></ng-template>
+            <ng-template swiperSlide><img src="../../../assets/img/avatar/male-02.jpg" alt=""></ng-template>
+            <ng-template swiperSlide><img src="../../../assets/img/avatar/female-07.jpg" alt=""></ng-template>
+            <ng-template swiperSlide><img src="../../../assets/img/avatar/male-07.jpg" alt=""></ng-template>
+            <ng-template swiperSlide><img src="../../../assets/img/avatar/female-07.jpg" alt=""></ng-template>
+            <ng-template swiperSlide><img src="../../../assets/img/avatar/male-01.jpg" alt=""></ng-template>
+            <!-- <ng-template swiperSlide><img src="../../../assets/img/avatar/female-09.jpg" alt=""></ng-template>
+            <ng-template swiperSlide><img src="../../../assets/img/avatar/male-03.jpg" alt=""></ng-template>
+            <ng-template swiperSlide><img src="../../../assets/img/avatar/male-09.jpg" alt=""></ng-template>
+            <ng-template swiperSlide><img src="../../../assets/img/avatar/female-10.jpg" alt=""></ng-template>
+            <ng-template swiperSlide><img src="../../../assets/img/avatar/male-12.jpg" alt=""></ng-template>
+            <ng-template swiperSlide><img src="../../../assets/img/avatar/female-17.jpg" alt=""></ng-template> -->
+
+        </swiper>
+
+    </div>
 
     <ul class="chat-list">
         <li class="chat-item">
@@ -15,18 +42,12 @@
                     New message from your friend
                 </div>
             </div>
-        </li>
-        <li class="chat-item">
-            <div class="user-avatar">
-                <img src="../../../assets/img/avatar/male-13.jpg" alt="">
-            </div>
-            <div class="middle-content">
-                <div class="username">
-                    Mark Mitchell
+
+            <div class="chat-notify">
+                <div class="msg-date">
+                    11:03
                 </div>
-                <div class="user-message">
-                    New message from your friend
-                </div>
+                <img src="../../../assets/img/read.png" alt="">
             </div>
         </li>
         <li class="chat-item">
@@ -41,18 +62,12 @@
                     New message from your friend
                 </div>
             </div>
-        </li>
-        <li class="chat-item">
-            <div class="user-avatar">
-                <img src="../../../assets/img/avatar/male-13.jpg" alt="">
-            </div>
-            <div class="middle-content">
-                <div class="username">
-                    Mark Mitchell
+
+            <div class="chat-notify">
+                <div class="msg-date">
+                    1/11/2022
                 </div>
-                <div class="user-message">
-                    New message from your friend
-                </div>
+                <img src="../../../assets/img/read.png" alt="">
             </div>
         </li>
         <li class="chat-item">
@@ -67,17 +82,15 @@
                     New message from your friend
                 </div>
             </div>
-        </li>
-        <li class="chat-item">
-            <div class="user-avatar">
-                <img src="../../../assets/img/avatar/male-13.jpg" alt="">
-            </div>
-            <div class="middle-content">
-                <div class="username">
-                    Mark Mitchell
+
+            <div class="chat-notify">
+                <div class="msg-date">
+                    11:03
                 </div>
-                <div class="user-message">
-                    New message from your friend
+                <img src="../../../assets/img/read.png" alt="">
+
+                <div class="unread-badge">
+                    10
                 </div>
             </div>
         </li>
@@ -93,18 +106,12 @@
                     New message from your friend
                 </div>
             </div>
-        </li>
-        <li class="chat-item">
-            <div class="user-avatar">
-                <img src="../../../assets/img/avatar/male-13.jpg" alt="">
-            </div>
-            <div class="middle-content">
-                <div class="username">
-                    Mark Mitchell
+
+            <div class="chat-notify">
+                <div class="msg-date">
+                    1/11/2022
                 </div>
-                <div class="user-message">
-                    New message from your friend
-                </div>
+                <img src="../../../assets/img/read.png" alt="">
             </div>
         </li>
         <li class="chat-item">
@@ -119,30 +126,15 @@
                     New message from your friend
                 </div>
             </div>
-        </li>
-        <li class="chat-item">
-            <div class="user-avatar">
-                <img src="../../../assets/img/avatar/male-13.jpg" alt="">
-            </div>
-            <div class="middle-content">
-                <div class="username">
-                    Mark Mitchell
+
+            <div class="chat-notify">
+                <div class="msg-date">
+                    11:03
                 </div>
-                <div class="user-message">
-                    New message from your friend
-                </div>
-            </div>
-        </li>
-        <li class="chat-item">
-            <div class="user-avatar">
-                <img src="../../../assets/img/avatar/male-13.jpg" alt="">
-            </div>
-            <div class="middle-content">
-                <div class="username">
-                    Mark Mitchell
-                </div>
-                <div class="user-message">
-                    New message from your friend
+                <img src="../../../assets/img/read.png" alt="">
+
+                <div class="unread-badge">
+                    10
                 </div>
             </div>
         </li>
@@ -158,18 +150,12 @@
                     New message from your friend
                 </div>
             </div>
-        </li>
-        <li class="chat-item">
-            <div class="user-avatar">
-                <img src="../../../assets/img/avatar/male-13.jpg" alt="">
-            </div>
-            <div class="middle-content">
-                <div class="username">
-                    Mark Mitchell
+
+            <div class="chat-notify">
+                <div class="msg-date">
+                    1/11/2022
                 </div>
-                <div class="user-message">
-                    New message from your friend
-                </div>
+                <img src="../../../assets/img/read.png" alt="">
             </div>
         </li>
         <li class="chat-item">
@@ -184,6 +170,17 @@
                     New message from your friend
                 </div>
             </div>
+
+            <div class="chat-notify">
+                <div class="msg-date">
+                    11:03
+                </div>
+                <img src="../../../assets/img/read.png" alt="">
+
+                <div class="unread-badge">
+                    10
+                </div>
+            </div>
         </li>
         <li class="chat-item">
             <div class="user-avatar">
@@ -195,9 +192,171 @@
                 </div>
                 <div class="user-message">
                     New message from your friend
+                </div>
+            </div>
+
+            <div class="chat-notify">
+                <div class="msg-date">
+                    1/11/2022
+                </div>
+                <img src="../../../assets/img/read.png" alt="">
+            </div>
+        </li>
+        <li class="chat-item">
+            <div class="user-avatar">
+                <img src="../../../assets/img/avatar/male-13.jpg" alt="">
+            </div>
+            <div class="middle-content">
+                <div class="username">
+                    Mark Mitchell
+                </div>
+                <div class="user-message">
+                    New message from your friend
+                </div>
+            </div>
+
+            <div class="chat-notify">
+                <div class="msg-date">
+                    11:03
+                </div>
+                <img src="../../../assets/img/read.png" alt="">
+
+                <div class="unread-badge">
+                    10
+                </div>
+            </div>
+        </li>
+        <li class="chat-item">
+            <div class="user-avatar">
+                <img src="../../../assets/img/avatar/male-13.jpg" alt="">
+            </div>
+            <div class="middle-content">
+                <div class="username">
+                    Mark Mitchell
+                </div>
+                <div class="user-message">
+                    New message from your friend
+                </div>
+            </div>
+
+            <div class="chat-notify">
+                <div class="msg-date">
+                    1/11/2022
+                </div>
+                <img src="../../../assets/img/read.png" alt="">
+            </div>
+        </li>
+        <li class="chat-item">
+            <div class="user-avatar">
+                <img src="../../../assets/img/avatar/male-13.jpg" alt="">
+            </div>
+            <div class="middle-content">
+                <div class="username">
+                    Mark Mitchell
+                </div>
+                <div class="user-message">
+                    New message from your friend
+                </div>
+            </div>
+
+            <div class="chat-notify">
+                <div class="msg-date">
+                    11:03
+                </div>
+                <img src="../../../assets/img/read.png" alt="">
+
+                <div class="unread-badge">
+                    10
+                </div>
+            </div>
+        </li>
+        <li class="chat-item">
+            <div class="user-avatar">
+                <img src="../../../assets/img/avatar/male-13.jpg" alt="">
+            </div>
+            <div class="middle-content">
+                <div class="username">
+                    Mark Mitchell
+                </div>
+                <div class="user-message">
+                    New message from your friend
+                </div>
+            </div>
+
+            <div class="chat-notify">
+                <div class="msg-date">
+                    1/11/2022
+                </div>
+                <img src="../../../assets/img/read.png" alt="">
+            </div>
+        </li>
+        <li class="chat-item">
+            <div class="user-avatar">
+                <img src="../../../assets/img/avatar/male-13.jpg" alt="">
+            </div>
+            <div class="middle-content">
+                <div class="username">
+                    Mark Mitchell
+                </div>
+                <div class="user-message">
+                    New message from your friend
+                </div>
+            </div>
+
+            <div class="chat-notify">
+                <div class="msg-date">
+                    11:03
+                </div>
+                <img src="../../../assets/img/read.png" alt="">
+
+                <div class="unread-badge">
+                    10
+                </div>
+            </div>
+        </li>
+        <li class="chat-item">
+            <div class="user-avatar">
+                <img src="../../../assets/img/avatar/male-13.jpg" alt="">
+            </div>
+            <div class="middle-content">
+                <div class="username">
+                    Mark Mitchell
+                </div>
+                <div class="user-message">
+                    New message from your friend
+                </div>
+            </div>
+
+            <div class="chat-notify">
+                <div class="msg-date">
+                    1/11/2022
+                </div>
+                <img src="../../../assets/img/read.png" alt="">
+            </div>
+        </li>
+        <li class="chat-item">
+            <div class="user-avatar">
+                <img src="../../../assets/img/avatar/male-13.jpg" alt="">
+            </div>
+            <div class="middle-content">
+                <div class="username">
+                    Mark Mitchell
+                </div>
+                <div class="user-message">
+                    New message from your friend
+                </div>
+            </div>
+
+            <div class="chat-notify">
+                <div class="msg-date">
+                    11:03
+                </div>
+                <img src="../../../assets/img/read.png" alt="">
+
+                <div class="unread-badge">
+                    10
                 </div>
             </div>
         </li>
     </ul>
-
 </div>
