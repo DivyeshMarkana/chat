@@ -1,8 +1,13 @@
 .user-chat-box {
-    width   : 100% !important;
-    height  : 100%;
-    position: relative;
-    overflow: hidden;
+    width            : 100% !important;
+    height           : 100%;
+    position         : relative;
+    // overflow-x    : hidden;
+    overflow         : hidden;
+    display          : grid;
+    grid-auto-rows   : auto 1fr auto;
+    color            : #fff;
+    box-sizing       : border-box !important;
 
     .chat-header {
         width           : 100%;
@@ -41,7 +46,7 @@
                 }
 
                 .chat-user-status {
-                    color    : #dddddd1f;
+                    color    : #4b4b53;
                     font-size: .8rem;
                 }
             }
@@ -67,6 +72,76 @@
                     width : 30px;
                     height: auto;
                 }
+            }
+        }
+    }
+
+    .chat-content {
+        // border: 1px solid red;
+    }
+
+    .new-message-box {
+        // border: 1px solid yellow;
+        height    : 60px;
+        width     : 100%;
+        box-sizing: border-box;
+
+        display              : grid;
+        grid-template-columns: auto auto 1fr auto;
+
+        .msg-icon {
+            display        : flex;
+            justify-content: center;
+            align-items    : center;
+
+            img {
+                width : 20px;
+                height: 20px;
+            }
+        }
+
+        .message-input {
+            // width     : 100%;
+            // height    : 100%;
+            // color     : #fff;
+            // background: transparent;
+
+            input {
+                width     : 100%;
+                height    : 100%;
+                color     : #fff;
+                background: transparent;
+                padding   : 0 .7rem;
+
+                &:focus {
+                    // outline: 1px solid #8f67fd;
+                    outline: none;
+                }
+            }
+        }
+
+        .emojis {
+            // border: 1px solid purple;
+            width: 60px;
+        }
+
+        .attachments {
+            // border: 1px solid blue;
+            width: 60px;
+        }
+
+        .message-input {
+            // border: 1px solid green;
+        }
+
+        .send {
+            // border: 1px solid pink;
+            width: 60px;
+
+            &:hover {
+                border       : 1px solid #49aa6f;
+                border-radius: 50%;
+                transition   : 650ms cubic-bezier(.5, 0, .5, 1);
             }
         }
     }
@@ -98,6 +173,12 @@
                 justify-content : center;
                 align-items     : center;
             }
+
+        }
+
+        .sidenav-content {
+            padding: 3rem 1rem;
+            color  : #fff;
         }
     }
 
