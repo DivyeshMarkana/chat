@@ -1,0 +1,41 @@
+<div class="user-chat-box">
+
+    <div class="chat-header">
+        <div class="chat-header-right">
+            <div class="chat-header-avatar">
+                <img src="../assets/img/avatar/male-13.jpg" alt="">
+            </div>
+            <div class="chat-header-name">
+                <div class="chat-user-name">
+                    Mark Mitchell
+                </div>
+                <div class="chat-user-status">
+                    Online
+                </div>
+            </div>
+        </div>
+
+        <div class="chat-header-left">
+            <div class="action-icon pointer">
+                <img src="../../assets/img/call.png" alt="">
+            </div>
+            <div class="action-icon pointer">
+                <img src="../../assets/img/video.png" alt="">
+            </div>
+            <div class="action-icon pointer">
+                <!-- <mat-icon style="cursor: pointer; color: #fff;" (click)="toggleMenu()">more_vert</mat-icon> -->
+                <img (click)="toggleMenu()" src="../../assets/img/white-icons/collection.png" alt="">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="side" [@slideInOut]="menuState">
+        <div class="inner-side">
+            <div class="close-icon" (click)="close()">
+                <mat-icon class="pointer">close</mat-icon>
+            </div>
+        </div>
+    </div>
+
+</div>

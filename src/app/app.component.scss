@@ -2,46 +2,6 @@
     cursor: pointer;
 }
 
-// .top-header {
-//     background        : #171821;
-//     // position  : absolute;
-//     // top       : 0;
-//     // left      : 70px;
-//     height            : 70px;
-//     // width          : 100%;
-//     // width          : 100%;
-//     display           : flex;
-//     justify-content   : space-between;
-//     align-items       : center;
-//     width             : calc(100vw - 80px);
-//     float             : right;
-//     padding-left      : 2.5rem;
-
-//     .searchbar {
-//         display: flex;
-
-//         img {
-//             width  : 25px;
-//             height : 25px;
-//             opacity: .8;
-//         }
-
-//         .search-input {
-//             background-color: transparent;
-//             width           : 250px;
-//             margin-left     : 1rem;
-//             height          : 100%;
-//             margin-top      : .3rem;
-//             color           : rgba(255, 255, 255, 0.813);
-
-//             &:focus,
-//             &:active {
-//                 outline: none;
-//             }
-//         }
-//     }
-// }
-
 .main-container {
     display: flex;
     height : 100%;

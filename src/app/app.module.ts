@@ -12,13 +12,19 @@ import { SwiperModule } from "swiper/angular";
 
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatIconModule } from '@angular/material/icon';
+import { ConversationComponent } from './conversation/conversation.component';
+
+import { MatSidenavModule } from '@angular/material/sidenav';
+
+import { ThemeHelperService } from './core/theme-helper.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserChatComponent,
     GroupChatComponent,
-    ChatComponent
+    ChatComponent,
+    ConversationComponent
   ],
   imports: [
     BrowserModule,
@@ -28,9 +34,10 @@ import { MatIconModule } from '@angular/material/icon';
     SwiperModule,
 
     MatGridListModule,
-    MatIconModule
+    MatIconModule,
+    MatSidenavModule
   ],
-  providers: [],
+  providers: [ThemeHelperService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

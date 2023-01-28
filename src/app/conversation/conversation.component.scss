@@ -1,0 +1,104 @@
+.user-chat-box {
+    width   : 100% !important;
+    height  : 100%;
+    position: relative;
+    overflow: hidden;
+
+    .chat-header {
+        width           : 100%;
+        height          : 80px;
+        display         : flex;
+        justify-content : space-between;
+        background-color: transparent;
+        box-sizing      : border-box;
+        border-bottom   : 1px solid #dddddd1f;
+        display         : flex;
+        align-items     : center;
+        justify-content : space-between;
+        padding         : 0 1.5rem;
+
+        .chat-header-right {
+            display    : flex;
+            align-items: center;
+
+            .chat-header-avatar {
+                width       : 50px;
+                height      : 50px;
+                margin-right: 1rem;
+
+                img {
+                    border-radius: 50%;
+                }
+            }
+
+            .chat-header-name {
+
+
+                .chat-user-name {
+                    color         : #fff;
+                    font-size     : large;
+                    letter-spacing: .5px;
+                }
+
+                .chat-user-status {
+                    color    : #dddddd1f;
+                    font-size: .8rem;
+                }
+            }
+        }
+
+        .chat-header-left {
+            width          : 20%;
+            display        : flex;
+            align-items    : center;
+            justify-content: space-between;
+
+            .action-icon {
+                width          : 40px;
+                height         : 40px;
+                border         : 1px solid #dddddd1f;
+                border-radius  : 50%;
+                padding        : 10px;
+                display        : flex;
+                justify-content: center;
+                align-items    : center;
+
+                img {
+                    width : 30px;
+                    height: auto;
+                }
+            }
+        }
+    }
+
+    .side {
+        width           : 350px !important;
+        background-color: #171821;
+        height          : 100%;
+        position        : absolute;
+        top             : 0;
+        right           : 0;
+        height          : 100%;
+        overflow        : scroll;
+        border-left     : 1px solid #dddddd1f;
+
+        .inner-side {
+            width   : 100%;
+            height  : 100%;
+            position: relative;
+
+            .close-icon {
+                position        : absolute;
+                top             : 10px;
+                left            : 10px;
+                background-color: #171821;
+                border-radius   : 50%;
+                color           : #fff;
+                display         : flex;
+                justify-content : center;
+                align-items     : center;
+            }
+        }
+    }
+
+}
