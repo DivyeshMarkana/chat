@@ -1,11 +1,9 @@
-<div class="main-container">
+<div class="main-container" *ngIf="width > 600">
     <div class="chat-container">
 
         <div class="story-container">
-
-            <swiper [slidesPerView]="4" [spaceBetween]="30" [freeMode]="true" [pagination]="{
-      clickable: true
-    }" class="mySwiper">
+            <swiper [slidesPerView]="4" [spaceBetween]="30" [freeMode]="true" [pagination]="{clickable: true}"
+                class="mySwiper">
                 <ng-template swiperSlide>
                     <mat-icon style="color: #ffffff9a;">add</mat-icon>
 
@@ -50,7 +48,7 @@
             </li>
             <li class="chat-item">
                 <div class="user-avatar">
-                    <img src="../../../assets/img/avatar/male-13.jpg" alt="">
+                    <img src="../../../assets/img/avatar/female-03.jpg" alt="">
                 </div>
                 <div class="middle-content">
                     <div class="username">
@@ -362,4 +360,285 @@
     <div class="conversation-box">
         <app-conversation></app-conversation>
     </div>
+</div>
+
+
+<!-- TODO: Mobile Layout -->
+
+<div class="relative flex flex-auto w-full bg-card mobile-container">
+    <!-- <mat-drawer-container class="flex-auto h-full">
+        <mat-drawer class="w-full sm:w-100 lg:border-r lg:shadow-none dark:bg-gray-900" opened="true">
+            <ul>
+                <li>Mark Mitchell</li>
+                <li>Mark Mitchell</li>
+                <li>Mark Mitchell</li>
+                <li>Mark Mitchell</li>
+                <li>Mark Mitchell</li>
+                <li>Mark Mitchell</li>
+                <li>Mark Mitchell</li>
+                <li>Mark Mitchell</li>
+                <li>Mark Mitchell</li>
+                <li>Mark Mitchell</li>
+                <li>Mark Mitchell</li>
+                <li>Mark Mitchell</li>
+                <li>Mark Mitchell</li>
+                <li>Mark Mitchell</li>
+                <li>Mark Mitchell</li>
+                <li>Mark Mitchell</li>
+                <li>Mark Mitchell</li>
+            </ul>
+        </mat-drawer>
+        <mat-drawer-content class="flex overflow-hidden">
+        </mat-drawer-content>
+    </mat-drawer-container> -->
+
+    <div class="w-full h-full container" style="height: 100vh;">
+        <div class="chat-list" *ngIf="!open_conversation">
+            <li class="chat-item pointer" (click)="openConversation()">
+                <div class="user-avatar">
+                    <img src="../../../assets/img/avatar/male-13.jpg" alt="">
+                </div>
+                <div class="middle-content">
+                    <div class="username">
+                        Mark Mitchell
+                    </div>
+                    <div class="user-message">
+                        New message from your friend
+                    </div>
+                </div>
+
+                <div class="chat-notify">
+                    <div class="msg-date">
+                        11:03
+                    </div>
+                    <img src="../../../assets/img/read.png" alt="">
+
+                    <div class="unread-badge">
+                        10
+                    </div>
+                </div>
+            </li>
+            <li class="chat-item pointer" (click)="openConversation()">
+                <div class="user-avatar">
+                    <img src="../../../assets/img/avatar/male-13.jpg" alt="">
+                </div>
+                <div class="middle-content">
+                    <div class="username">
+                        Mark Mitchell
+                    </div>
+                    <div class="user-message">
+                        New message from your friend
+                    </div>
+                </div>
+
+                <div class="chat-notify">
+                    <div class="msg-date">
+                        11:03
+                    </div>
+                    <img src="../../../assets/img/read.png" alt="">
+
+                    <div class="unread-badge">
+                        10
+                    </div>
+                </div>
+            </li>
+            <li class="chat-item pointer" (click)="openConversation()">
+                <div class="user-avatar">
+                    <img src="../../../assets/img/avatar/male-13.jpg" alt="">
+                </div>
+                <div class="middle-content">
+                    <div class="username">
+                        Mark Mitchell
+                    </div>
+                    <div class="user-message">
+                        New message from your friend
+                    </div>
+                </div>
+
+                <div class="chat-notify">
+                    <div class="msg-date">
+                        11:03
+                    </div>
+                    <img src="../../../assets/img/read.png" alt="">
+
+                    <div class="unread-badge">
+                        10
+                    </div>
+                </div>
+            </li>
+            <li class="chat-item pointer" (click)="openConversation()">
+                <div class="user-avatar">
+                    <img src="../../../assets/img/avatar/male-13.jpg" alt="">
+                </div>
+                <div class="middle-content">
+                    <div class="username">
+                        Mark Mitchell
+                    </div>
+                    <div class="user-message">
+                        New message from your friend
+                    </div>
+                </div>
+
+                <div class="chat-notify">
+                    <div class="msg-date">
+                        11:03
+                    </div>
+                    <img src="../../../assets/img/read.png" alt="">
+
+                    <div class="unread-badge">
+                        10
+                    </div>
+                </div>
+            </li>
+            <li class="chat-item pointer" (click)="openConversation()">
+                <div class="user-avatar">
+                    <img src="../../../assets/img/avatar/male-13.jpg" alt="">
+                </div>
+                <div class="middle-content">
+                    <div class="username">
+                        Mark Mitchell
+                    </div>
+                    <div class="user-message">
+                        New message from your friend
+                    </div>
+                </div>
+
+                <div class="chat-notify">
+                    <div class="msg-date">
+                        11:03
+                    </div>
+                    <img src="../../../assets/img/read.png" alt="">
+
+                    <div class="unread-badge">
+                        10
+                    </div>
+                </div>
+            </li>
+            <li class="chat-item pointer" (click)="openConversation()">
+                <div class="user-avatar">
+                    <img src="../../../assets/img/avatar/male-13.jpg" alt="">
+                </div>
+                <div class="middle-content">
+                    <div class="username">
+                        Mark Mitchell
+                    </div>
+                    <div class="user-message">
+                        New message from your friend
+                    </div>
+                </div>
+
+                <div class="chat-notify">
+                    <div class="msg-date">
+                        11:03
+                    </div>
+                    <img src="../../../assets/img/read.png" alt="">
+
+                    <div class="unread-badge">
+                        10
+                    </div>
+                </div>
+            </li>
+            <li class="chat-item pointer" (click)="openConversation()">
+                <div class="user-avatar">
+                    <img src="../../../assets/img/avatar/male-13.jpg" alt="">
+                </div>
+                <div class="middle-content">
+                    <div class="username">
+                        Mark Mitchell
+                    </div>
+                    <div class="user-message">
+                        New message from your friend
+                    </div>
+                </div>
+
+                <div class="chat-notify">
+                    <div class="msg-date">
+                        11:03
+                    </div>
+                    <img src="../../../assets/img/read.png" alt="">
+
+                    <div class="unread-badge">
+                        10
+                    </div>
+                </div>
+            </li>
+            <li class="chat-item pointer" (click)="openConversation()">
+                <div class="user-avatar">
+                    <img src="../../../assets/img/avatar/male-13.jpg" alt="">
+                </div>
+                <div class="middle-content">
+                    <div class="username">
+                        Mark Mitchell
+                    </div>
+                    <div class="user-message">
+                        New message from your friend
+                    </div>
+                </div>
+
+                <div class="chat-notify">
+                    <div class="msg-date">
+                        11:03
+                    </div>
+                    <img src="../../../assets/img/read.png" alt="">
+
+                    <div class="unread-badge">
+                        10
+                    </div>
+                </div>
+            </li>
+            <li class="chat-item pointer" (click)="openConversation()">
+                <div class="user-avatar">
+                    <img src="../../../assets/img/avatar/male-13.jpg" alt="">
+                </div>
+                <div class="middle-content">
+                    <div class="username">
+                        Mark Mitchell
+                    </div>
+                    <div class="user-message">
+                        New message from your friend
+                    </div>
+                </div>
+
+                <div class="chat-notify">
+                    <div class="msg-date">
+                        11:03
+                    </div>
+                    <img src="../../../assets/img/read.png" alt="">
+
+                    <div class="unread-badge">
+                        10
+                    </div>
+                </div>
+            </li>
+            <li class="chat-item pointer" (click)="openConversation()">
+                <div class="user-avatar">
+                    <img src="../../../assets/img/avatar/male-13.jpg" alt="">
+                </div>
+                <div class="middle-content">
+                    <div class="username">
+                        Mark Mitchell
+                    </div>
+                    <div class="user-message">
+                        New message from your friend
+                    </div>
+                </div>
+
+                <div class="chat-notify">
+                    <div class="msg-date">
+                        11:03
+                    </div>
+                    <img src="../../../assets/img/read.png" alt="">
+
+                    <div class="unread-badge">
+                        10
+                    </div>
+                </div>
+            </li>
+        </div>
+
+        <div class="conversation-box" *ngIf="open_conversation">
+            <app-conversation></app-conversation>
+        </div>
+    </div>
+
 </div>

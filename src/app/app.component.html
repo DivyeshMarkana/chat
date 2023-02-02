@@ -1,29 +1,5 @@
-<!-- <div class="header">
-  <div class="top-navbar">
-    <div class="right">
-
-    </div>
-    <div class="left">
-
-    </div>
-  </div>
-</div> -->
-
 <!-- <img src="../assets/chat.png" alt=""> -->
-<!-- <div class="top-header">
-  <div class="searchbar">
-    <img src="../assets/img/search-white.png" alt="">
-    <input class="search-input" type="text" placeholder="Search for active people">
-  </div>
-  <div class="user-actions">
-
-  </div>
-</div> -->
-
-
-
-
-<div class="main-container">
+<div class="main-container" *ngIf="width > 600">
   <div class="head">
     <div class="nav">
       <div class="brand-logo poitner">
@@ -34,41 +10,30 @@
         <ul class="nav-list">
           <li class="nav-item" routerLink="/chat" routerLinkActive="active-item">
             <a class="nav-navigation poitner" routerLink="/chat" routerLinkActive="active-item">
-              <!-- <img class="nav-icon  " src="../assets/img/message.png" alt=""> -->
               <img class="nav-icon  " src="../assets/img/white-icons/message.png" alt="">
             </a>
           </li>
           <li class="nav-item" routerLink="/group" routerLinkActive="active-item">
             <a class="nav-navigation poitner">
-              <!-- <img class="nav-icon  " src="../assets/img/users.png" alt=""> -->
               <img class="nav-icon  " src="../assets/img/white-icons/group.png" alt="">
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-navigation poitner">
-              <!-- <img class="nav-icon  " src="../assets/img/missed-call.png" alt=""> -->
               <img class="nav-icon  " src="../assets/img/white-icons/call.png" alt="">
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-navigation poitner">
-              <!-- <img class="nav-icon  " src="../assets/img/settings.png" alt=""> -->
               <img class="nav-icon  " src="../assets/img/white-icons/setting.png" alt="">
             </a>
           </li>
-          <!-- <li class="nav-item">
-            <a class="nav-navigation poitner">
-              <img class="nav-icon  " src="../assets/img/user.png" alt="">
-            </a>
-          </li> -->
         </ul>
       </nav>
     </div>
   </div>
 
   <div class="left-side">
-
-    <!-- <img src="../assets/chat.png" alt=""> -->
     <div class="top-header">
       <div class="searchbar">
         <img src="../assets/img/search-white.png" alt="">
@@ -78,12 +43,65 @@
 
       </div>
     </div>
-
-
-
     <div class="router">
       <router-outlet></router-outlet>
     </div>
   </div>
+</div>
 
+
+<!-- TODO: Mobile Layout -->
+<div class="mobile-container" *ngIf="width < 600">
+  <div class="mobile-top-header" *ngIf="!disableHeader">
+    <div class="brand-logo-mobile poitner">
+      <img src="../assets/img/white-icons/logo-1.png" alt="">
+    </div>
+
+    <div class="header-actions pointer">
+      <div class="search-icon">
+        <img src="../assets/img/search-white.png" alt="">
+      </div>
+      <div>
+        <mat-icon>more_vert</mat-icon>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="mobile-router">
+    <router-outlet></router-outlet>
+  </div>
+
+  <div class="mobile-nav" style="background: #171821;">
+    <nav>
+      <ul class="nav-list">
+        <li class="nav-item">
+          <a class="nav-navigation poitner">
+            <img class="nav-icon  " src="../assets/img/white-icons/camera.png" alt="">
+          </a>
+        </li>
+        <!-- <li class="nav-item">
+            <a class="nav-navigation poitner">
+              <img class="nav-icon  " src="../assets/img/white-icons/setting.png" alt="">
+            </a>
+          </li> -->
+        <li class="nav-item" routerLink="/chat" routerLinkActive="active-item">
+          <a class="nav-navigation poitner" routerLink="/chat" routerLinkActive="active-item">
+            <img class="nav-icon  " src="../assets/img/white-icons/message.png" alt="">
+          </a>
+        </li>
+
+        <li class="nav-item" routerLink="/group" routerLinkActive="active-item">
+          <a class="nav-navigation poitner">
+            <img class="nav-icon  " src="../assets/img/white-icons/group.png" alt="">
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-navigation poitner">
+            <img class="nav-icon  " src="../assets/img/white-icons/call.png" alt="">
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 </div>

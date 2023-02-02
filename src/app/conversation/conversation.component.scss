@@ -69,8 +69,10 @@
                 align-items    : center;
 
                 img {
-                    width : 30px;
-                    height: auto;
+                    // width : 30px;
+                    // height: auto;
+                    width : 100%;
+                    height: 100%;
                 }
             }
         }
@@ -147,15 +149,15 @@
     }
 
     .side {
-        width           : 350px !important;
-        background-color: #171821;
-        height          : 100%;
-        position        : absolute;
-        top             : 0;
-        right           : 0;
-        height          : 100%;
-        overflow        : scroll;
-        border-left     : 1px solid #dddddd1f;
+        width              : 350px !important;
+        background-color   : #171821;
+        height             : 100%;
+        position           : absolute;
+        top                : 0;
+        right              : 0;
+        height             : 100%;
+        // overflow        : scroll;
+        border-left        : 1px solid #dddddd1f;
 
         .inner-side {
             width   : 100%;
@@ -183,3 +185,33 @@
     }
 
 }
+
+
+
+// TODO: Mobile Layout
+
+// .mobile-conversation-box {
+//     width             : 100%;
+//     height            : 100vh;
+//     border            : 1px solid yellow;
+//     position          : relative;
+//     overflow-y        : hidden;
+//     display           : grid;
+//     grid-template-rows: auto 1fr auto;
+
+//     .chat-header {
+//         border  : 1px solid red;
+//         width   : 100%;
+//         height  : 70px;
+//         position: fixed;
+//         top     : 0;
+//     }
+
+//     .new-message-box {
+//         border  : 1px solid pink;
+//         width   : 100%;
+//         height  : 70px;
+//         position: fixed;
+//         bottom  : 0;
+//     }
+// }

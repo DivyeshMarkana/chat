@@ -26,7 +26,11 @@ import { ThemeHelperService } from '../core/theme-helper.service';
 })
 export class ConversationComponent implements OnInit {
 
-  constructor(private themeHelper: ThemeHelperService) { }
+  width: number;
+
+  constructor(private themeHelper: ThemeHelperService) {
+    this.width = this.themeHelper.width;
+  }
 
   ngOnInit(): void {
   }

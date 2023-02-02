@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Observable, Subject } from 'rxjs';
+import { BehaviorSubject, Observable, Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -7,6 +7,8 @@ import { Observable, Subject } from 'rxjs';
 export class ThemeHelperService {
 
   constructor() { }
+
+  width = window.innerWidth;
 
   private _listeners = new Subject<any>();
 

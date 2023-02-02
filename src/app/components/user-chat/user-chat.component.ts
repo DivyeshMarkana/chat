@@ -12,6 +12,9 @@ export class UserChatComponent implements OnInit {
 
   @ViewChild('drawer') public drawer: MatDrawer;
 
+  width: number;
+  open_conversation = false;
+
   constructor(private themeHelper: ThemeHelperService) {
     this.themeHelper.listen().subscribe((data) => {
       if (data[0] === 'toggle-conversation-side') {
@@ -26,9 +29,16 @@ export class UserChatComponent implements OnInit {
 
       }
     })
+
+    this.width = themeHelper.width;
   }
 
   ngOnInit(): void {
+  }
+
+  openConversation() {
+    this.themeHelper.updateListner('active:conversation', true);
+    this.open_conversation = true;
   }
 
 }
