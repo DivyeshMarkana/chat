@@ -1,4 +1,4 @@
-<div class="user-chat-box">
+<div class="user-chat-box" [ngStyle]="{'height' : width < 600 ? 'calc(100% - 60px)' : '100%'}">
 
     <div class="chat-header">
         <div class="chat-header-right">

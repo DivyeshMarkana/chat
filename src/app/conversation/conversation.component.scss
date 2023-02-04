@@ -1,13 +1,13 @@
 .user-chat-box {
-    width            : 100% !important;
-    height           : calc(100% - 70px);
-    position         : relative;
+    width               : 100% !important;
+    // height           : 100%;
+    position            : relative;
     // overflow-x    : hidden;
-    overflow         : hidden !important;
-    display          : grid;
-    grid-auto-rows   : auto 1fr auto;
-    color            : #fff;
-    box-sizing       : border-box !important;
+    overflow            : hidden !important;
+    display             : grid;
+    grid-auto-rows      : auto 1fr auto;
+    color               : #fff;
+    box-sizing          : border-box !important;
 
     .chat-header {
         width           : 100%;
@@ -187,6 +187,9 @@
     }
 
 }
+
+
+@media screen and (max-width:600) {}
 
 
 

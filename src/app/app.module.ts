@@ -17,6 +17,7 @@ import { ConversationComponent } from './conversation/conversation.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
 
 import { ThemeHelperService } from './core/theme-helper.service';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ThemeHelperService } from './core/theme-helper.service';
     UserChatComponent,
     GroupChatComponent,
     ChatComponent,
-    ConversationComponent
+    ConversationComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
