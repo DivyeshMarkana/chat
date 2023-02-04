@@ -27,8 +27,10 @@
             align-items: center;
 
             .chat-header-avatar {
-                width       : 50px;
-                height      : 50px;
+                // width       : 50px;
+                // height      : 50px;
+                width       : clamp(40px, 5vw, 50px);
+                height      : clamp(40px, 5vw, 50px);
                 margin-right: 1rem;
 
                 img {
@@ -40,9 +42,10 @@
 
 
                 .chat-user-name {
-                    color         : #fff;
-                    font-size     : large;
-                    letter-spacing: .5px;
+                    color               : #fff;
+                    // font-size     : clamp(14px, 5vw, 19px);
+                    // font-size        : large;
+                    letter-spacing      : .5px;
                 }
 
                 .chat-user-status {

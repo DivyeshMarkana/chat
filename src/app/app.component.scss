@@ -230,7 +230,7 @@
 
         .header-actions {
             color          : #fff;
-            width          : 17%;
+            width          : 20%;
             display        : flex;
             justify-content: space-between;
             align-items    : center;
@@ -296,9 +296,10 @@
     }
 
     .mobile-router {
-        overflow-y     : hidden;
-        scrollbar-width: none;
-        height         : 100vh;
+        overflow-y        : scroll;
+        // overflow-y     : hidden;
+        scrollbar-width   : none;
+        height            : 100vh;
     }
 
     .mobile-router::-webkit-scrollbar {

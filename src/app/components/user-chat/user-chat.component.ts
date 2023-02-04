@@ -39,6 +39,7 @@ export class UserChatComponent implements OnInit {
     })
 
     this.width = themeHelper.width;
+    this.themeHelper.updateListner('auth:active', false);
   }
 
   ngOnInit(): void {

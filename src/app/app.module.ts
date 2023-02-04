@@ -15,6 +15,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { ConversationComponent } from './conversation/conversation.component';
 
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatButtonModule } from '@angular/material/button';
+import { MatMenuModule } from '@angular/material/menu';
 
 import { ThemeHelperService } from './core/theme-helper.service';
 import { LoginComponent } from './components/login/login.component';
@@ -37,7 +39,9 @@ import { LoginComponent } from './components/login/login.component';
 
     MatGridListModule,
     MatIconModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatButtonModule,
+    MatMenuModule
   ],
   providers: [ThemeHelperService],
   bootstrap: [AppComponent]

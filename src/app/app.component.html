@@ -1,6 +1,8 @@
 <!-- <img src="../assets/chat.png" alt=""> -->
 <div class="main-container" *ngIf="width > 600">
-  <div class="head">
+
+  <!-- TODO: *ngIf="!disableSidenav"  after Login or Register logic-->
+  <div class="head" *ngIf="!disableSidenav">
     <div class="nav">
       <div class="brand-logo poitner">
         <img src="../assets/img/alphabet.png" alt="">
@@ -34,13 +36,25 @@
   </div>
 
   <div class="left-side">
-    <div class="top-header">
+
+    <!-- TODO: *ngIf="!disableHeader"  after Login or Register logic-->
+    <div class="top-header" *ngIf="!disableHeader">
       <div class="searchbar">
         <img src="../assets/img/search-white.png" alt="">
         <input class="search-input" type="text" placeholder="Search for active people">
       </div>
       <div class="user-actions">
+        <!-- <button mat-mini-fab>
+          <mat-icon class="text-white mr-7">person</mat-icon>
+        </button> -->
 
+        <img class="mr-6" [matMenuTriggerFor]="menu" src="../assets/img/white-icons/profile-user.png" width="27px"
+          height="27px" alt="">
+
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item routerLink="/login">Login</button>
+          <!-- <button mat-menu-item>Item 2</button> -->
+        </mat-menu>
       </div>
     </div>
     <div class="router">
@@ -52,7 +66,9 @@
 
 <!-- TODO: Mobile Layout -->
 <div class="mobile-container" *ngIf="width < 600">
-  <div class="mobile-top-header" *ngIf="!disableHeader">
+
+  <!-- TODO: *ngIf="!disableHeader"  after Login or Register logic-->
+  <div class="mobile-top-header" *ngIf="!activeChat">
     <div class="brand-logo-mobile poitner">
       <img src="../assets/img/white-icons/logo-1.png" alt="">
     </div>
@@ -62,7 +78,15 @@
         <img src="../assets/img/search-white.png" alt="">
       </div>
       <div>
-        <mat-icon>more_vert</mat-icon>
+        <!-- <mat-icon [matMenuTriggerFor]="menu">more_vert</mat-icon>
+         -->
+        <img class="" [matMenuTriggerFor]="menu" src="../assets/img/white-icons/profile-user.png" width="27px"
+          height="27px" alt="">
+
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item routerLink="/login">Login</button>
+          <!-- <button mat-menu-item>Item 2</button> -->
+        </mat-menu>
       </div>
     </div>
 
@@ -72,7 +96,8 @@
     <router-outlet></router-outlet>
   </div>
 
-  <div class="mobile-nav" style="background: #171821;">
+  <!-- TODO: *ngIf="!disableSidenav"  after Login or Register logic-->
+  <div class="mobile-nav" style="background: #171821;" *ngIf="!disableSidenav">
     <nav>
       <ul class="nav-list">
         <li class="nav-item">
