@@ -28,6 +28,14 @@ export class UserChatComponent implements OnInit {
         }
 
       }
+
+      if (data[0] === 'active:conversation') {
+        if (data[1] === true) {
+          this.open_conversation = true;
+        } else {
+          this.open_conversation = false;
+        }
+      }
     })
 
     this.width = themeHelper.width;

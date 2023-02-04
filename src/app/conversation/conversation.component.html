@@ -1,8 +1,8 @@
-<div class="user-chat-box" *ngIf="width > 600">
+<div class="user-chat-box">
 
     <div class="chat-header">
         <div class="chat-header-right">
-            <!-- <mat-icon class="mr-4">arrow_back</mat-icon> -->
+            <mat-icon *ngIf="width < 600" (click)="backToList()" class="mr-4 pointer">arrow_back</mat-icon>
             <div class="chat-header-avatar">
                 <img src="../assets/img/avatar/male-13.jpg" alt="">
             </div>
@@ -77,9 +77,9 @@
 
 <!-- TODO: Mobile Layout -->
 
-<div class="mobile-conversation-box" *ngIf="width < 600">
+<!-- <div class="mobile-conversation-box" *ngIf="width < 600">
 
-    <!-- <div class="chat-header" style="height: 15% !important;">
+    <div class="chat-header" style="height: 15% !important;">
         ddd
     </div>
 
@@ -89,7 +89,7 @@
 
     <div class="new-messsage-box" style="height: 15% !important;">
         ddd
-    </div> -->
+    </div>
 
     <div class="absolute top-0">
         <div class="chat-header">
@@ -118,4 +118,4 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->

@@ -1,9 +1,9 @@
 .user-chat-box {
     width            : 100% !important;
-    height           : 100%;
+    height           : calc(100% - 70px);
     position         : relative;
     // overflow-x    : hidden;
-    overflow         : hidden;
+    overflow         : hidden !important;
     display          : grid;
     grid-auto-rows   : auto 1fr auto;
     color            : #fff;
@@ -80,6 +80,8 @@
 
     .chat-content {
         // border: 1px solid red;
+        overflow-y: scroll;
+        height    : 100%;
     }
 
     .new-message-box {

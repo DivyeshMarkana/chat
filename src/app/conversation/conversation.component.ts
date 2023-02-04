@@ -45,4 +45,8 @@ export class ConversationComponent implements OnInit {
     this.menuState = 'out'
   }
 
+  backToList() {
+    this.themeHelper.updateListner('active:conversation', false);
+  }
+
 }
